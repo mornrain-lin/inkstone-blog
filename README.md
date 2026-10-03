@@ -82,7 +82,7 @@ WordPress 后台的主题截图要求尺寸为 **1200 × 900 像素**（PNG 格�
 ### 本地开发
 
 ```bash
-git clone https://github.com/mornrain/inkstone-blog.git
+git clone https://github.com/mornrain-lin/inkstone-blog.git
 cd inkstone-blog
 php -l functions.php   # 语法自检
 ```
@@ -281,7 +281,7 @@ add_filter( 'the_content', function ( $content ) {
 
 MIT License
 
-Copyright (c) 2026 MornRain
+Copyright (c) 2026 mornrain-lin
 
 详细条款见 [LICENSE](LICENSE) 文件。
 
