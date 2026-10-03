@@ -1,0 +1,279 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 2,
+	"settings": {
+		"appearanceTools": true,
+		"useRootPaddingAwareAlignments": true,
+		"layout": {
+			"contentSize": "720px",
+			"wideSize": "1080px"
+		},
+		"color": {
+			"defaultPalette": false,
+			"defaultGradients": false,
+			"custom": true,
+			"customDuotone": false,
+			"palette": [
+				{
+					"slug": "background",
+					"color": "#fdfdfc",
+					"name": "纸面"
+				},
+				{
+					"slug": "surface",
+					"color": "#f4f3f0",
+					"name": "浅底"
+				},
+				{
+					"slug": "text",
+					"color": "#24211e",
+					"name": "墨色"
+				},
+				{
+					"slug": "text-soft",
+					"color": "#5b554e",
+					"name": "淡墨"
+				},
+				{
+					"slug": "muted",
+					"color": "#8d867c",
+					"name": "批注"
+				},
+				{
+					"slug": "border",
+					"color": "#e4e1da",
+					"name": "界线"
+				},
+				{
+					"slug": "accent",
+					"color": "#9a3a2f",
+					"name": "朱砂"
+				}
+			]
+		},
+		"typography": {
+			"customFontSize": true,
+			"lineHeight": true,
+			"dropCap": true,
+			"fluid": true,
+			"fontFamilies": [
+				{
+					"slug": "serif",
+					"name": "衬线正文",
+					"fontFamily": "\"Iowan Old Style\", \"Palatino Linotype\", Palatino, \"Book Antiqua\", Georgia, \"Songti SC\", \"Noto Serif CJK SC\", \"Source Han Serif SC\", \"SimSun\", serif"
+				},
+				{
+					"slug": "sans",
+					"name": "无衬线界面",
+					"fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", sans-serif"
+				},
+				{
+					"slug": "mono",
+					"name": "等宽代码",
+					"fontFamily": "ui-monospace, SFMono-Regular, \"SF Mono\", Menlo, Consolas, \"Liberation Mono\", \"Courier New\", monospace"
+				}
+			],
+			"fontSizes": [
+				{
+					"slug": "small",
+					"size": "0.875rem",
+					"name": "小"
+				},
+				{
+					"slug": "medium",
+					"size": "1rem",
+					"name": "中"
+				},
+				{
+					"slug": "large",
+					"size": "1.2rem",
+					"name": "大"
+				},
+				{
+					"slug": "x-large",
+					"size": "1.5rem",
+					"name": "特大"
+				}
+			]
+		},
+		"spacing": {
+			"padding": true,
+			"margin": true,
+			"blockGap": true,
+			"units": [ "px", "em", "rem", "%", "vw", "vh" ]
+		},
+		"border": {
+			"color": true,
+			"radius": true,
+			"style": true,
+			"width": true
+		}
+	},
+	"styles": {
+		"color": {
+			"background": "var(--wp--preset--color--background)",
+			"text": "var(--wp--preset--color--text)"
+		},
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--serif)",
+			"fontSize": "1.125rem",
+			"lineHeight": "1.85"
+		},
+		"spacing": {
+			"blockGap": "1.35em"
+		},
+		"elements": {
+			"link": {
+				"color": {
+					"text": "var(--wp--preset--color--accent)"
+				},
+				":hover": {
+					"color": {
+						"text": "var(--wp--preset--color--text)"
+					}
+				}
+			},
+			"h1": {
+				"typography": {
+					"fontSize": "2.5rem",
+					"lineHeight": "1.28",
+					"fontWeight": "600"
+				}
+			},
+			"h2": {
+				"typography": {
+					"fontSize": "1.75rem",
+					"lineHeight": "1.28",
+					"fontWeight": "600"
+				},
+				"border": {
+					"bottom": {
+						"color": "var(--wp--preset--color--border)",
+						"style": "solid",
+						"width": "1px"
+					}
+				}
+			},
+			"h3": {
+				"typography": {
+					"fontSize": "1.2rem",
+					"lineHeight": "1.35",
+					"fontWeight": "600"
+				}
+			},
+			"h4": {
+				"typography": {
+					"fontSize": "1.05rem",
+					"lineHeight": "1.4",
+					"fontWeight": "600"
+				}
+			},
+			"blockquote": {
+				"color": {
+					"text": "var(--wp--preset--color--text-soft)"
+				},
+				"border": {
+					"left": {
+						"color": "var(--wp--preset--color--accent)",
+						"style": "solid",
+						"width": "3px"
+					}
+				},
+				"typography": {
+					"fontStyle": "italic"
+				},
+				"spacing": {
+					"padding": {
+						"left": "1.4em"
+					}
+				}
+			},
+			"code": {
+				"color": {
+					"background": "var(--wp--preset--color--surface)",
+					"text": "var(--wp--preset--color--text)"
+				},
+				"border": {
+					"color": "var(--wp--preset--color--border)",
+					"style": "solid",
+					"width": "1px"
+				},
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--mono)",
+					"fontSize": "0.875em"
+				}
+			},
+			"caption": {
+				"color": {
+					"text": "var(--wp--preset--color--muted)"
+				},
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--sans)",
+					"fontSize": "0.8125rem"
+				}
+			}
+		},
+		"blocks": {
+			"core/code": {
+				"color": {
+					"background": "var(--wp--preset--color--surface)",
+					"text": "var(--wp--preset--color--text)"
+				},
+				"border": {
+					"color": "var(--wp--preset--color--border)",
+					"radius": "3px",
+					"style": "solid",
+					"width": "1px"
+				},
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--mono)",
+					"fontSize": "0.875em",
+					"lineHeight": "1.7"
+				},
+				"spacing": {
+					"padding": "16px 20px"
+				}
+			},
+			"core/pullquote": {
+				"border": {
+					"top": {
+						"color": "var(--wp--preset--color--muted)",
+						"style": "solid",
+						"width": "2px"
+					},
+					"bottom": {
+						"color": "var(--wp--preset--color--muted)",
+						"style": "solid",
+						"width": "2px"
+					}
+				},
+				"typography": {
+					"fontStyle": "italic"
+				}
+			},
+			"core/separator": {
+				"color": {
+					"text": "var(--wp--preset--color--border)"
+				}
+			},
+			"core/table": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--sans)",
+					"fontSize": "0.9em"
+				}
+			}
+		}
+	},
+	"templateParts": [
+		{
+			"name": "header",
+			"title": "页头",
+			"area": "header"
+		},
+		{
+			"name": "footer",
+			"title": "页脚",
+			"area": "footer"
+		}
+	]
+}
