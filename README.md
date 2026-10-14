@@ -1,3 +1,5 @@
+![mornrain-inkstone-blog](assets/preview.png)
+
 # Inkstone Blog
 
 文字优先的长文阅读 WordPress 主题。衬线正文、宽窄栏可调、自动目录、纯 CSS 代码高亮、字数与阅读时长统计、内置夜间模式。零外部资源，为技术文章与深度长文设计。
